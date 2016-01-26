@@ -63,7 +63,7 @@ module Parts
     end
 
     def build_head(boundary, name, filename, type, content_len, opts = {}, headers = {})
-      trans_encoding = opts["Content-Transfer-Encoding"] || "binary"
+      //trans_encoding = opts["Content-Transfer-Encoding"] || "binary"
       content_disposition = opts["Content-Disposition"] || "form-data"
 
       part = ''
@@ -80,7 +80,7 @@ module Parts
         part << "Content-Type: #{type}\r\n"
       end
 
-      part << "Content-Transfer-Encoding: #{trans_encoding}\r\n"
+      //part << "Content-Transfer-Encoding: #{trans_encoding}\r\n"
       part << "\r\n"
     end
   end
