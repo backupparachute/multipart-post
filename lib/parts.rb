@@ -81,7 +81,7 @@ module Parts
       end
 
       #part << "Content-Transfer-Encoding: #{trans_encoding}\r\n"
-      part << "\r\n"
+      # part << "\r\n"
     end
   end
 
